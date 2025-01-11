@@ -14,12 +14,12 @@ export default function DragonBallCards() {
 
   const fetchCharacters = async () => {
     try {
-      const response = await fetch("https://dragonball-api.com/api/characters");
+      const response = await fetch("https://dragonball-api.com/api/characters?limit=25");
       if (!response.ok) {
         throw new Error("Error al obtener los datos de la API");
       }
       const data = await response.json();
-      setCharacters(data.items.slice(0, 7));
+      setCharacters(data.items.slice(0, 25));
     } catch (err) {
       setError((err as Error).message);
     } finally {
