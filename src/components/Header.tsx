@@ -5,7 +5,7 @@ import logo from "../logo.png"
 function Header() {
     return(
         <header className=" flex flex-row justify-between px-5 py-4 bg-blue-300 ">
-        <div className='w-12 h-12'>
+        <div className='w-12 h-12 rounded-sm '>
         <img src={logo} alt="Logotipo de la aplicación" />
         </div>    
        <div className='text-primary text-lg'>
@@ -22,6 +22,9 @@ function Header() {
        </div>
        <div className=' text-orange-600 font-serif'>
         Acerca de Nosotros
+       </div>
+       <div className='text-primary text-lg'>
+        Numero Ramdon
        </div>
        <div className='text-blue-950 font-sans mr-8'>
         Iniciar Seccion

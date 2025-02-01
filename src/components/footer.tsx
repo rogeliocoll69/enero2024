@@ -5,7 +5,7 @@ function Footer() {
     return(
         <div className="flex items-end ">
 
-        <footer className="w-full text-primary bg-gray-100 body-font">
+        <footer className="w-full text-gray-700 bg-gray-100 body-font">
             <div
                 className="container flex flex-col flex-wrap px-5 py-5 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
                 <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
